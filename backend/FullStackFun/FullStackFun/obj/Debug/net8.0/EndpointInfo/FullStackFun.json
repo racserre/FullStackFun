@@ -5,6 +5,45 @@
     "version": "1.0"
   },
   "paths": {
+    "/MarriottFood": {
+      "get": {
+        "tags": [
+          "MarriottFood"
+        ],
+        "operationId": "GetMarriottFood",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MarriottFood"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MarriottFood"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MarriottFood"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/WeatherForecast": {
       "get": {
         "tags": [
@@ -47,6 +86,33 @@
   },
   "components": {
     "schemas": {
+      "MarriottFood": {
+        "required": [
+          "eventName",
+          "foodRating",
+          "vendor"
+        ],
+        "type": "object",
+        "properties": {
+          "foodId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "eventName": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "vendor": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "foodRating": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
       "WeatherForecast": {
         "type": "object",
         "properties": {

@@ -135,3 +135,4 @@ C:\Users\rache\source\repos\FullStackFun\backend\FullStackFun\FullStackFun\obj\D
 C:\Users\rache\source\repos\FullStackFun\backend\FullStackFun\FullStackFun\obj\Debug\net8.0\FullStackFun.genruntimeconfig.cache
 C:\Users\rache\source\repos\FullStackFun\backend\FullStackFun\FullStackFun\obj\Debug\net8.0\ref\FullStackFun.dll
 C:\Users\rache\source\repos\FullStackFun\backend\FullStackFun\FullStackFun\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\rache\source\repos\FullStackFun\backend\FullStackFun\FullStackFun\obj\Debug\net8.0\FullStackFun.sourcelink.json
